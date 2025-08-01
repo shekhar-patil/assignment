@@ -7,7 +7,7 @@ import (
 
 var (
 	PipelineData []models.PipelineRecord
-	Mu           sync.Mutex
+	Mu           sync.RWMutex
 )
 
 var ValidToken = "s3cr3t-token"
